@@ -107,10 +107,6 @@ async def banall(event):
      else:
          RiZ = await event.get_chat()
          RiZoeLop = await event.client.get_me()
-         admin = RiZ.admin_rights
-         creator = RiZ.creator
-         if not admin and not creator:
-              return await event.reply("I Don't have sufficient Rights !!")
          RiZoeL = await Riz.send_message(event.chat_id, "**Hello !! I'm Alive**")
          admins = await event.client.get_participants(event.chat_id, filter=ChannelParticipantsAdmins)
          admins_id = [i.id for i in admins]
