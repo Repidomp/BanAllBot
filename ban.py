@@ -105,7 +105,6 @@ async def banall(event):
          Reply = f"Noob !! Use This Cmd in Group."
          await event.reply(Reply)
      else:
-         await event.delete()
          RiZ = await event.get_chat()
          RiZoeLop = await event.client.get_me()
          admin = RiZ.admin_rights
